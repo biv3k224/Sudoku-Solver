@@ -1,4 +1,5 @@
-const API_BASE = "http://localhost:8080/api/sudoku";
+const API_BASE = "https://<your-app-name>.onrender.com/api/sudoku";
+
 
 document.addEventListener("DOMContentLoaded", () => {
     createGrid();
