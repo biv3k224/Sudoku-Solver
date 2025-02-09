@@ -1,4 +1,5 @@
-const API_BASE = "https://<your-app-name>.onrender.com/api/sudoku";
+const API_BASE = "https://sudoku-solver-f5d6.onrender.com/api/sudoku";
+
 
 
 document.addEventListener("DOMContentLoaded", () => {
