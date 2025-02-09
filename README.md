@@ -35,16 +35,8 @@ This project uses the following technologies:
 2. **Solve the Puzzle**: Click **"Solve Puzzle"** and watch the grid fill up with the correct numbers, step-by-step.
 3. **Clear the Grid**: Reset the grid to start over with a new puzzle or your own input.
 
-## 📥 Getting Started
+## 🧑‍💻 License
 
-Clone this repository and set up the project locally to start playing around with the code.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-### Prerequisites
-
-Before you begin, ensure you have the following installed:
-
-- **Java** (JDK 11 or later)
-- **Maven** (for managing dependencies)
-🛠️ License
-This project is licensed under the MIT License.
-Made with ❤️ by Bibek Kumar Tamang(https://github.com/biv3k224)
+Made with ❤️ by [Bibek Kumar Tamang](https://github.com/biv3k224)
