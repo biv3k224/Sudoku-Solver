@@ -45,12 +45,6 @@ Before you begin, ensure you have the following installed:
 
 - **Java** (JDK 11 or later)
 - **Maven** (for managing dependencies)
-- **Node.js** & **npm** (for managing frontend dependencies, if applicable)
-
-### Setup Instructions
-
-#### 1. Clone the Repo
-
-```bash
-git clone https://github.com/yourusername/sudoku-solver.git
-cd sudoku-solver
+🛠️ License
+This project is licensed under the MIT License.
+Made with ❤️ by Bibek Kumar Tamang(https://github.com/biv3k224)
