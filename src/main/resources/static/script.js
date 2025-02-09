@@ -1,6 +1,4 @@
-const API_BASE = "https://sudoku-solver-f5d6.onrender.com/api/sudoku";
-
-
+const API_BASE = "https://sudoku-solver-f5d6.onrender.com/api/sudoku"; // Use the correct live server URL
 
 document.addEventListener("DOMContentLoaded", () => {
     createGrid();
@@ -70,24 +68,28 @@ function animateSolution(solution) {
     let index = 0;
 
     function fillNextCell() {
+        // Skip already filled cells
         while (index < 81 && cells[index].value !== "") {
-            index++; // Skip pre-filled cells
+            index++;
         }
 
-        if (index >= 81) return;
+        if (index >= 81) return; // Stop if all cells are filled
 
         let row = Math.floor(index / 9);
         let col = index % 9;
         let value = solution[row][col];
 
-        cells[index].value = value;
-        cells[index].style.backgroundColor = "#ffcc00"; // Highlight effect
+        // Only animate empty cells
+        if (cells[index].value === "") {
+            cells[index].value = value;
+            cells[index].style.backgroundColor = "#ffcc00"; // Highlight effect
 
-        setTimeout(() => {
-            cells[index].style.backgroundColor = "";
-            index++; // Move to the next cell
-            fillNextCell();
-        }, 50); // Adjust speed of animation here
+            setTimeout(() => {
+                cells[index].style.backgroundColor = "";
+                index++; // Move to the next cell
+                fillNextCell(); // Recursively call to fill the next cell
+            }, 100); // Adjust speed of animation here
+        }
     }
 
     fillNextCell();
